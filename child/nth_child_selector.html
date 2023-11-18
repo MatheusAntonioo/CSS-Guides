@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nth_child_selector.css">
+  <title>:nth-child() Selector</title>
+</head>
+<body>
+  <header>
+    <h1>
+      Understand CSS <span>:nth-child()</span> selector
+    </h1>
+  </header>
+  <section>
+    <div class="background">
+
+      <div class="element">
+        <h2>:first-child</h2>
+        <div class="elements">
+          <div class="child first-child">
+            <h3>1</h3>
+          </div>
+          <div class="child first-child">
+            <h3>2</h3>
+          </div>
+          <div class="child first-child">
+            <h3>3</h3>
+          </div>
+          <div class="child first-child">
+            <h3>4</h3>
+          </div>
+          <div class="child first-child">
+            <h3>5</h3>
+          </div>
+          <div class="child first-child">
+            <h3>6</h3>
+          </div>
+          <div class="child first-child">
+            <h3>7</h3>
+          </div>
+          <div class="child first-child">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:last-child</h2>
+        <div class="elements">
+          <div class="child last-child">
+            <h3>1</h3>
+          </div>
+          <div class="child last-child">
+            <h3>2</h3>
+          </div>
+          <div class="child last-child">
+            <h3>3</h3>
+          </div>
+          <div class="child last-child">
+            <h3>4</h3>
+          </div>
+          <div class="child last-child">
+            <h3>5</h3>
+          </div>
+          <div class="child last-child">
+            <h3>6</h3>
+          </div>
+          <div class="child last-child">
+            <h3>7</h3>
+          </div>
+          <div class="child last-child">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-child(<span>odd</span>)</h2>
+        <div class="elements">
+          <div class="child odd">
+            <h3>1</h3>
+          </div>
+          <div class="child odd">
+            <h3>2</h3>
+          </div>
+          <div class="child odd">
+            <h3>3</h3>
+          </div>
+          <div class="child odd">
+            <h3>4</h3>
+          </div>
+          <div class="child odd">
+            <h3>5</h3>
+          </div>
+          <div class="child odd">
+            <h3>6</h3>
+          </div>
+          <div class="child odd">
+            <h3>7</h3>
+          </div>
+          <div class="child odd">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-child(<span>even</span>)</h2>
+        <div class="elements">
+          <div class="child even">
+            <h3>1</h3>
+          </div>
+          <div class="child even">
+            <h3>2</h3>
+          </div>
+          <div class="child even">
+            <h3>3</h3>
+          </div>
+          <div class="child even">
+            <h3>4</h3>
+          </div>
+          <div class="child even">
+            <h3>5</h3>
+          </div>
+          <div class="child even">
+            <h3>6</h3>
+          </div>
+          <div class="child even">
+            <h3>7</h3>
+          </div>
+          <div class="child even">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-child(<span>4</span>)</h2>
+        <div class="elements">
+          <div class="child nth-child-1">
+            <h3>1</h3>
+          </div>
+          <div class="child nth-child-1">
+            <h3>2</h3>
+          </div>
+          <div class="child nth-child-1">
+            <h3>3</h3>
+          </div>
+          <div class="child nth-child-1">
+            <h3>4</h3>
+          </div>
+          <div class="child nth-child-1">
+            <h3>5</h3>
+          </div>
+          <div class="child nth-child-1">
+            <h3>6</h3>
+          </div>
+          <div class="child nth-child-1">
+            <h3>7</h3>
+          </div>
+          <div class="child nth-child-1">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-child(<span>3n</span>)</h2>
+        <div class="elements">
+          <div class="child nth-child-2">
+            <h3>1</h3>
+          </div>
+          <div class="child nth-child-2">
+            <h3>2</h3>
+          </div>
+          <div class="child nth-child-2">
+            <h3>3</h3>
+          </div>
+          <div class="child nth-child-2">
+            <h3>4</h3>
+          </div>
+          <div class="child nth-child-2">
+            <h3>5</h3>
+          </div>
+          <div class="child nth-child-2">
+            <h3>6</h3>
+          </div>
+          <div class="child nth-child-2">
+            <h3>7</h3>
+          </div>
+          <div class="child nth-child-2">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-child(<span>3n-1</span>)</h2>
+        <div class="elements">
+          <div class="child nth-child-4">
+            <h3>1</h3>
+          </div>
+          <div class="child nth-child-4">
+            <h3>2</h3>
+          </div>
+          <div class="child nth-child-4">
+            <h3>3</h3>
+          </div>
+          <div class="child nth-child-4">
+            <h3>4</h3>
+          </div>
+          <div class="child nth-child-4">
+            <h3>5</h3>
+          </div>
+          <div class="child nth-child-4">
+            <h3>6</h3>
+          </div>
+          <div class="child nth-child-4">
+            <h3>7</h3>
+          </div>
+          <div class="child nth-child-4">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-child(<span>n+5</span>)</h2>
+        <div class="elements">
+          <div class="child nth-child-3">
+            <h3>1</h3>
+          </div>
+          <div class="child nth-child-3">
+            <h3>2</h3>
+          </div>
+          <div class="child nth-child-3">
+            <h3>3</h3>
+          </div>
+          <div class="child nth-child-3">
+            <h3>4</h3>
+          </div>
+          <div class="child nth-child-3">
+            <h3>5</h3>
+          </div>
+          <div class="child nth-child-3">
+            <h3>6</h3>
+          </div>
+          <div class="child nth-child-3">
+            <h3>7</h3>
+          </div>
+          <div class="child nth-child-3">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-child(<span>-n+3</span>)</h2>
+        <div class="elements">
+          <div class="child nth-child-5">
+            <h3>1</h3>
+          </div>
+          <div class="child nth-child-5">
+            <h3>2</h3>
+          </div>
+          <div class="child nth-child-5">
+            <h3>3</h3>
+          </div>
+          <div class="child nth-child-5">
+            <h3>4</h3>
+          </div>
+          <div class="child nth-child-5">
+            <h3>5</h3>
+          </div>
+          <div class="child nth-child-5">
+            <h3>6</h3>
+          </div>
+          <div class="child nth-child-5">
+            <h3>7</h3>
+          </div>
+          <div class="child nth-child-5">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="element">
+        <h2>:nth-last-child(<span>3</span>)</h2>
+        <div class="elements">
+          <div class="child nth-last-child">
+            <h3>1</h3>
+          </div>
+          <div class="child nth-last-child">
+            <h3>2</h3>
+          </div>
+          <div class="child nth-last-child">
+            <h3>3</h3>
+          </div>
+          <div class="child nth-last-child">
+            <h3>4</h3>
+          </div>
+          <div class="child nth-last-child">
+            <h3>5</h3>
+          </div>
+          <div class="child nth-last-child">
+            <h3>6</h3>
+          </div>
+          <div class="child nth-last-child">
+            <h3>7</h3>
+          </div>
+          <div class="child nth-last-child">
+            <h3>8</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

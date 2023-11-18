@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #505050;
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f8f8f8;
+}
+
+h1 span {
+  color: #00d423;
+}
+
+.background{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.element {
+  cursor: pointer;
+  width: 40rem;
+  height: 3rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  background-color: #3d3d3d;
+  color: #dddddd;
+}
+.element:first-child {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+.element:last-child {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+h2 {
+  width: 30%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+}
+h2:hover {
+  background-color: #505050;
+}
+
+h2 span {
+  color: #00d423;
+}
+
+.elements {
+  width: 66%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: .5rem;
+  background-color: #474747;
+}
+
+.child{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddddd;
+  color: #090909;
+}
+
+.element:hover .first-child:first-child {
+  background-color: #00d423;
+}
+
+.element:hover .last-child:last-child {
+  background-color: #00d423;
+}
+
+.element:hover .odd:nth-child(odd) {
+  background-color: #00d423;
+}
+
+.element:hover .even:nth-child(even) {
+  background-color: #00d423;
+}
+
+.element:hover .nth-child-1:nth-child(4) {
+  background-color: #00d423;
+}
+
+.element:hover .nth-child-2:nth-child(3n) {
+  background-color: #00d423;
+}
+
+.element:hover .nth-child-4:nth-child(3n-1) {
+  background-color: #00d423;
+}
+
+.element:hover .nth-child-3:nth-child(n+5) {
+  background-color: #00d423;
+}
+
+.element:hover .nth-child-5:nth-child(-n+3) {
+  background-color: #00d423;
+}
+
+.element:hover .nth-last-child:nth-last-child(3) {
+  background-color: #00d423;
+}
