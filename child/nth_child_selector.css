@@ -4,8 +4,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --black: #000;
+  --eerieBlack: #21251f;
+  --onyx: #383b3e;
+  --grey: #4e515c;
+  --mediumSlateBlue: #7862f8;
+  --green: #c8f560;
+  --white: #f8f8f8;
+}
+
 body {
-  background-color: #505050;
+  background-color: var(--eerieBlack);
 }
 
 header {
@@ -19,11 +29,11 @@ header {
 
 h1 {
   font-size: 2rem;
-  color: #f8f8f8;
+  color: var(--white);
 }
 
 h1 span {
-  color: #00d423;
+  color: var(--green);
 }
 
 .background{
@@ -42,8 +52,8 @@ h1 span {
   justify-content: space-between;
   align-items: center;
   padding: .5rem 1rem;
-  background-color: #3d3d3d;
-  color: #dddddd;
+  background-color: var(--grey);
+  color: var(--white);
 }
 .element:first-child {
   border-top-left-radius: .5rem;
@@ -63,11 +73,11 @@ h2 {
   border-radius: .5rem;
 }
 h2:hover {
-  background-color: #505050;
+  background-color: var(--eerieBlack);
 }
 
 h2 span {
-  color: #00d423;
+  color: var(--green);
 }
 
 .elements {
@@ -77,7 +87,7 @@ h2 span {
   justify-content: space-evenly;
   align-items: center;
   border-radius: .5rem;
-  background-color: #474747;
+  background-color: var(--onyx);
 }
 
 .child{
@@ -87,46 +97,21 @@ h2 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dddddd;
-  color: #090909;
+  background-color: var(--white);
+  color: var(--black);
 }
 
-.element:hover .first-child:first-child {
-  background-color: #00d423;
-}
-
-.element:hover .last-child:last-child {
-  background-color: #00d423;
-}
-
-.element:hover .odd:nth-child(odd) {
-  background-color: #00d423;
-}
-
-.element:hover .even:nth-child(even) {
-  background-color: #00d423;
-}
-
-.element:hover .nth-child-1:nth-child(4) {
-  background-color: #00d423;
-}
-
-.element:hover .nth-child-2:nth-child(3n) {
-  background-color: #00d423;
-}
-
-.element:hover .nth-child-4:nth-child(3n-1) {
-  background-color: #00d423;
-}
-
-.element:hover .nth-child-3:nth-child(n+5) {
-  background-color: #00d423;
-}
-
-.element:hover .nth-child-5:nth-child(-n+3) {
-  background-color: #00d423;
-}
-
-.element:hover .nth-last-child:nth-last-child(3) {
-  background-color: #00d423;
+.element:hover .first-child:first-child,
+.element:hover .last-child:last-child,
+.element:hover .odd:nth-child(odd),
+.element:hover .even:nth-child(even),
+.element:hover .nth-child-1:nth-child(4),
+.element:hover .nth-child-2:nth-child(3n),
+.element:hover .nth-child-4:nth-child(3n-1),
+.element:hover .nth-child-4:nth-child(3n-1),
+.element:hover .nth-child-3:nth-child(n+5),
+.element:hover .nth-child-5:nth-child(-n+3),
+.element:hover .nth-last-child:nth-last-child(3)
+{
+  background-color: var(--green);
 }
